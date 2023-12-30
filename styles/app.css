@@ -1,0 +1,80 @@
+:root{
+	--example: 0.1px 0.1px 5px black;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background-color:#90A4AE;
+
+}
+
+.user-profile{
+	height: 50px;
+}
+
+.user-profile-btn{
+	background: #1976D2;
+	height: 50px;
+	width: 175px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	border-radius: 5px;
+	font-weight:550;
+	font-size: 16px;
+	color: #fff;
+	cursor: pointer;
+	border: none;
+	outline: none;
+
+}
+
+.icon{
+	width: 20px;
+	margin: 5px;
+	transition: all 0.2s;
+}
+
+.box{
+	visibility:hidden;
+	opacity: 0;
+	width: inherit;
+	border-radius: 10px;
+	background-color: #FFF;
+	text-align: center;
+	color: #000;
+	padding:15px ;
+	transition: all 0.4s;
+}
+
+.box a{
+	display: block;
+	text-decoration: none;
+	color: inherit;
+	margin: 10px;
+	font-family: ;
+	font-weight: initial;
+}
+
+.user-profile:hover .icon{
+	transform: rotate(180deg);
+}
+
+.user-profile:hover .box{
+	visibility: visible;
+	transform: translatey(8px);
+	opacity: 1;
+}
+
+
